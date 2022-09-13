@@ -1,0 +1,16 @@
+version: '3'
+services:
+  express_server:
+    build:
+      context: .
+      target: express_server
+    image: to_to_list_express_server
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./express_server:/home/node/app
+      
+  
+
+
+# vi:et:ts=2:sw=2:cc=80
