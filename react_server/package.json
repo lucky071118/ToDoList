@@ -10,5 +10,8 @@
     "react"
   ],
   "author": "lucky071118",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
