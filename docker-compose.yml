@@ -11,6 +11,16 @@ services:
       - ./express_server:/home/node/app
       
   
+  react_server:
+    build:
+      context: .
+      target: react_server
+    image: to_to_list_react_server
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./react_server:/home/node/app
+  
 
 
 # vi:et:ts=2:sw=2:cc=80
