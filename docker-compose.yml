@@ -7,8 +7,6 @@ services:
     image: to_to_list_express_server
     stdin_open: true
     tty: true
-    ports:
-      - "3000:3000"
     volumes:
       - ./express_server:/home/node/app
       
@@ -20,6 +18,8 @@ services:
     image: to_to_list_react_server
     stdin_open: true
     tty: true
+    ports:
+      - "3000:3000"
     volumes:
       - ./react_server:/home/node/app
   
