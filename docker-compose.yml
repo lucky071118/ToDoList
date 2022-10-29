@@ -35,7 +35,7 @@ services:
 
 
   mongo-express:
-    image: mongo-express:0.54.0
+    image: mongo-express:latest
     restart: always
     ports:
       - 8081:8081
