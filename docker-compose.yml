@@ -26,5 +26,11 @@ services:
       - ./react_server:/home/node/app
   
 
+  database:
+    image: mongo:6.0.2
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
 
 # vi:et:ts=2:sw=2:cc=80
